@@ -3348,3 +3348,2305 @@ TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
 <td class="FileOfCaller">WebSocket.java</td>
 <td class="LineOfCaller">67</td>
 </tr>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Logback Log Messages</title>
+<style  type="text/css">
+table { margin-left: 2em; margin-right: 2em; border-left: 2px solid #AAA; }
+TR.even { background: #FFFFFF; }
+TR.odd { background: #EAEAEA; }
+TR.warn TD.Level, TR.error TD.Level, TR.fatal TD.Level {font-weight: bold; color: #FF4040 }
+TD { padding-right: 1ex; padding-left: 1ex; border-right: 2px solid #AAA; }
+TD.Time, TD.Date { text-align: right; font-family: courier, monospace; font-size: smaller; }
+TD.Thread { text-align: left; }
+TD.Level { text-align: right; }
+TD.Logger { text-align: left; }
+TR.header { background: #596ED5; color: #FFF; font-weight: bold; font-size: larger; }
+TD.Exception { background: #A2AEE8; font-family: courier, monospace;}
+</style>
+
+  </head>
+<body>
+<hr/>
+<p>Log session start time Fri Jun 25 11:58:42 CST 2021</p><p></p>
+
+<table cellspacing="0">
+<tr class="header">
+<td class="Level">Level</td>
+<td class="Date">Date</td>
+<td class="Message">Message</td>
+<td class="MethodOfCaller">MethodOfCaller</td>
+<td class="FileOfCaller">FileOfCaller</td>
+<td class="LineOfCaller">LineOfCaller</td>
+</tr>
+
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:43,081</td>
+<td class="Message">HV000001: Hibernate Validator 6.1.6.Final</td>
+<td class="MethodOfCaller">&lt;clinit&gt;</td>
+<td class="FileOfCaller">Version.java</td>
+<td class="LineOfCaller">21</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:43,124</td>
+<td class="Message">Starting JeecgSystemApplication on bogon with PID 10253 (/Users/sherlockdong/Documents/学习/Projects/Jeecgboot_Study/jeecg-boot/jeecg-boot-module-system/target/classes started by sherlockdong in /Users/sherlockdong/Documents/学习/Projects/Jeecgboot_Study/jeecg-boot)</td>
+<td class="MethodOfCaller">logStarting</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">55</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:43,126</td>
+<td class="Message">The following profiles are active: dev</td>
+<td class="MethodOfCaller">logStartupProfileInfo</td>
+<td class="FileOfCaller">SpringApplication.java</td>
+<td class="LineOfCaller">655</td>
+</tr>
+
+<tr class="warn odd">
+<td class="Level">WARN</td>
+<td class="Date">2021-06-25 11:58:43,825</td>
+<td class="Message">For Jackson Kotlin classes support please add &quot;com.fasterxml.jackson.module:jackson-module-kotlin&quot; to the classpath</td>
+<td class="MethodOfCaller">warn</td>
+<td class="FileOfCaller">CompositeLog.java</td>
+<td class="LineOfCaller">127</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,318</td>
+<td class="Message">Multiple Spring Data modules found, entering strict repository configuration mode!</td>
+<td class="MethodOfCaller">multipleStoresDetected</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">249</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,322</td>
+<td class="Message">Bootstrapping Spring Data Redis repositories in DEFAULT mode.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">127</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,482</td>
+<td class="Message">Finished Spring Data repository scanning in 140ms. Found 0 Redis repository interfaces.</td>
+<td class="MethodOfCaller">registerRepositoriesIn</td>
+<td class="FileOfCaller">RepositoryConfigurationDelegate.java</td>
+<td class="LineOfCaller">187</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,660</td>
+<td class="Message"> ******************* init miniDao config [ begin ] *********************** </td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">25</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,661</td>
+<td class="Message"> ------ minidao.base-package ------- org.jeecg.modules.jmreport.*</td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">27</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,662</td>
+<td class="Message"> ------ minidao.db-type ------------ mysql</td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">28</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,664</td>
+<td class="Message"> ------ minidao Set Interceptor  ------- </td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">39</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,666</td>
+<td class="Message"> *******************  init miniDao config  [ end ] *********************** </td>
+<td class="MethodOfCaller">miniDaoBeanScannerConfigurer</td>
+<td class="FileOfCaller">MinidaoAutoConfiguration.java</td>
+<td class="LineOfCaller">50</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,744</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,745</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDataSourceDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,745</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDbDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,745</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDbFieldDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,745</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDbParamDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,746</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDictDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,746</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportDictItemDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,746</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportLinkDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,746</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportMapDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:45,746</td>
+<td class="Message">register minidao name is { org.jeecg.modules.jmreport.desreport.dao.JimuReportShareDao }</td>
+<td class="MethodOfCaller">doScan</td>
+<td class="FileOfCaller">MiniDaoClassPathMapperScanner.java</td>
+<td class="LineOfCaller">48</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,058</td>
+<td class="Message">Bean &#39;org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration&#39; of type [org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,106</td>
+<td class="Message">Bean &#39;spring.datasource.dynamic-com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,110</td>
+<td class="Message">Bean &#39;com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceAutoConfiguration$$EnhancerBySpringCGLIB$$e9df613d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,135</td>
+<td class="Message">Bean &#39;com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration&#39; of type [com.baomidou.dynamic.datasource.spring.boot.autoconfigure.DynamicDataSourceCreatorAutoConfiguration$$EnhancerBySpringCGLIB$$fb32147] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,169</td>
+<td class="Message">Bean &#39;basicDataSourceCreator&#39; of type [com.baomidou.dynamic.datasource.creator.BasicDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,173</td>
+<td class="Message">Bean &#39;jndiDataSourceCreator&#39; of type [com.baomidou.dynamic.datasource.creator.JndiDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,178</td>
+<td class="Message">Bean &#39;druidDataSourceCreator&#39; of type [com.baomidou.dynamic.datasource.creator.DruidDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,181</td>
+<td class="Message">Bean &#39;hikariDataSourceCreator&#39; of type [com.baomidou.dynamic.datasource.creator.HikariDataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,182</td>
+<td class="Message">Bean &#39;dataSourceCreator&#39; of type [com.baomidou.dynamic.datasource.creator.DataSourceCreator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,183</td>
+<td class="Message">Bean &#39;dynamicDataSourceProvider&#39; of type [com.baomidou.dynamic.datasource.provider.YmlDynamicDataSourceProvider] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,678</td>
+<td class="Message">{dataSource-1,master} inited</td>
+<td class="MethodOfCaller">init</td>
+<td class="FileOfCaller">DruidDataSource.java</td>
+<td class="LineOfCaller">994</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,680</td>
+<td class="Message">dynamic-datasource - load a datasource named [master] success</td>
+<td class="MethodOfCaller">addDataSource</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">132</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,681</td>
+<td class="Message">dynamic-datasource initial loaded [1] datasource,primary datasource named [master]</td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">DynamicRoutingDataSource.java</td>
+<td class="LineOfCaller">237</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,682</td>
+<td class="Message">Bean &#39;dataSource&#39; of type [com.baomidou.dynamic.datasource.DynamicRoutingDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,687</td>
+<td class="Message">Bean &#39;spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties&#39; of type [org.springframework.boot.autoconfigure.jdbc.JdbcProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,700</td>
+<td class="Message">Bean &#39;jdbcTemplate&#39; of type [org.springframework.jdbc.core.JdbcTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,704</td>
+<td class="Message">Bean &#39;org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration&#39; of type [org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,709</td>
+<td class="Message">Bean &#39;namedParameterJdbcTemplate&#39; of type [org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,716</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#9&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,727</td>
+<td class="Message">Bean &#39;jimuReportShareDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,730</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#8&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,732</td>
+<td class="Message">Bean &#39;jimuReportMapDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,735</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#7&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,737</td>
+<td class="Message">Bean &#39;jimuReportLinkDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,740</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#6&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,741</td>
+<td class="Message">Bean &#39;jimuReportDictItemDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,745</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#5&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,747</td>
+<td class="Message">Bean &#39;jimuReportDictDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,750</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#4&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,752</td>
+<td class="Message">Bean &#39;jimuReportDbParamDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,754</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#3&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,755</td>
+<td class="Message">Bean &#39;jimuReportDbFieldDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,759</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#2&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,761</td>
+<td class="Message">Bean &#39;jimuReportDbDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,764</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192#1&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,766</td>
+<td class="Message">Bean &#39;jimuReportDataSourceDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,770</td>
+<td class="Message">Bean &#39;(inner bean)#55e1192&#39; of type [org.jeecgframework.minidao.aop.MiniDaoHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,771</td>
+<td class="Message">Bean &#39;jimuReportDao&#39; of type [org.jeecgframework.minidao.factory.MiniDaoBeanFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,792</td>
+<td class="Message">Bean &#39;spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties&#39; of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:46,801</td>
+<td class="Message">Bean &#39;org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration&#39; of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,093</td>
+<td class="Message">Bean &#39;lettuceClientResources&#39; of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,260</td>
+<td class="Message">Bean &#39;redisConnectionFactory&#39; of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,262</td>
+<td class="Message">Bean &#39;shiroConfig&#39; of type [org.jeecg.config.shiro.ShiroConfig$$EnhancerBySpringCGLIB$$df8d3865] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,364</td>
+<td class="Message">Bean &#39;shiroRealm&#39; of type [org.jeecg.config.shiro.ShiroRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,463</td>
+<td class="Message">===============(1)创建缓存管理器RedisCacheManager</td>
+<td class="MethodOfCaller">redisCacheManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">214</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,470</td>
+<td class="Message">===============(2)创建RedisManager,连接Redis..</td>
+<td class="MethodOfCaller">redisManager</td>
+<td class="FileOfCaller">ShiroConfig.java</td>
+<td class="LineOfCaller">232</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,477</td>
+<td class="Message">Bean &#39;redisManager&#39; of type [org.crazycake.shiro.RedisManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,483</td>
+<td class="Message">Bean &#39;securityManager&#39; of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,544</td>
+<td class="Message">Bean &#39;authorizationAttributeSourceAdvisor&#39; of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,904</td>
+<td class="Message">Bean &#39;dsProcessor&#39; of type [com.baomidou.dynamic.datasource.processor.DsHeaderProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,923</td>
+<td class="Message">Bean &#39;redisConfig&#39; of type [org.jeecg.common.modules.redis.config.RedisConfig$$EnhancerBySpringCGLIB$$fcef4895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,984</td>
+<td class="Message">Bean &#39;org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration&#39; of type [org.apache.shiro.spring.boot.autoconfigure.ShiroBeanAutoConfiguration$$EnhancerBySpringCGLIB$$9369ce1c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:47,993</td>
+<td class="Message">Bean &#39;eventBus&#39; of type [org.apache.shiro.event.support.DefaultEventBus] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)</td>
+<td class="MethodOfCaller">postProcessAfterInitialization</td>
+<td class="FileOfCaller">PostProcessorRegistrationDelegate.java</td>
+<td class="LineOfCaller">335</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:48,490</td>
+<td class="Message">Tomcat initialized with port(s): 8080 (http)</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">108</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:48,503</td>
+<td class="Message">Initializing ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:48,504</td>
+<td class="Message">Starting service [Tomcat]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:48,504</td>
+<td class="Message">Starting Servlet engine: [Apache Tomcat/9.0.39]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:48,639</td>
+<td class="Message">Initializing Spring embedded WebApplicationContext</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:48,639</td>
+<td class="Message">Root WebApplicationContext: initialization completed in 5462 ms</td>
+<td class="MethodOfCaller">prepareWebApplicationContext</td>
+<td class="FileOfCaller">ServletWebServerApplicationContext.java</td>
+<td class="LineOfCaller">285</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:51,361</td>
+<td class="Message"> --- redis config init --- </td>
+<td class="MethodOfCaller">redisTemplate</td>
+<td class="FileOfCaller">RedisConfig.java</td>
+<td class="LineOfCaller">76</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,808</td>
+<td class="Message">Using default implementation for ThreadExecutor</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1220</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,810</td>
+<td class="Message">Job execution threads will use class loader of thread: main</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">SimpleThreadPool.java</td>
+<td class="LineOfCaller">268</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,829</td>
+<td class="Message">Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">SchedulerSignalerImpl.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,830</td>
+<td class="Message">Quartz Scheduler v.2.3.2 created.</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">229</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,835</td>
+<td class="Message">Using db table-based data access locking (synchronization).</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">672</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,838</td>
+<td class="Message">JobStoreCMT initialized.</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">JobStoreCMT.java</td>
+<td class="LineOfCaller">145</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,839</td>
+<td class="Message">Scheduler meta-data: Quartz Scheduler (v2.3.2) &#39;MyScheduler&#39; with instanceId &#39;bogon1624593532809&#39;
+  Scheduler class: &#39;org.quartz.core.QuartzScheduler&#39; - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool &#39;org.quartz.simpl.SimpleThreadPool&#39; - with 10 threads.
+  Using job-store &#39;org.springframework.scheduling.quartz.LocalDataSourceJobStore&#39; - which supports persistence. and is clustered.
+</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">294</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,839</td>
+<td class="Message">Quartz scheduler &#39;MyScheduler&#39; initialized from an externally provided properties instance.</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1374</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,839</td>
+<td class="Message">Quartz scheduler version: 2.3.2</td>
+<td class="MethodOfCaller">instantiate</td>
+<td class="FileOfCaller">StdSchedulerFactory.java</td>
+<td class="LineOfCaller">1378</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:52,840</td>
+<td class="Message">JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@37ab1b10</td>
+<td class="MethodOfCaller">setJobFactory</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">2293</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:54,734</td>
+<td class="Message"> --- Init JimuReport Config --- </td>
+<td class="MethodOfCaller">afterPropertiesSet</td>
+<td class="FileOfCaller">JimuReportConfiguration.java</td>
+<td class="LineOfCaller">53</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:55,453</td>
+<td class="Message">Exposing 2 endpoint(s) beneath base path &#39;/actuator&#39;</td>
+<td class="MethodOfCaller">&lt;init&gt;</td>
+<td class="FileOfCaller">EndpointLinksResolver.java</td>
+<td class="LineOfCaller">58</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:55,555</td>
+<td class="Message"> 代码生成器数据库连接，使用application.yml的DB配置 ###################</td>
+<td class="MethodOfCaller">initCodeGenerateDbConfig</td>
+<td class="FileOfCaller">CodeGenerateDbConfig.java</td>
+<td class="LineOfCaller">45</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:55,611</td>
+<td class="Message">Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]</td>
+<td class="MethodOfCaller">initHandlerMethods</td>
+<td class="FileOfCaller">WebMvcPropertySourcedRequestMappingHandlerMapping.java</td>
+<td class="LineOfCaller">69</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:55,711</td>
+<td class="Message">---创建线程池---</td>
+<td class="MethodOfCaller">asyncServiceExecutor</td>
+<td class="FileOfCaller">JmReportExecutorConfig.java</td>
+<td class="LineOfCaller">21</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:55,714</td>
+<td class="Message">Initializing ExecutorService</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">ExecutorConfigurationSupport.java</td>
+<td class="LineOfCaller">181</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:55,717</td>
+<td class="Message">Initializing ExecutorService &#39;jmReportTaskExecutor&#39;</td>
+<td class="MethodOfCaller">initialize</td>
+<td class="FileOfCaller">ExecutorConfigurationSupport.java</td>
+<td class="LineOfCaller">181</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:56,732</td>
+<td class="Message">Starting ProtocolHandler [&quot;http-nio-8080&quot;]</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:56,793</td>
+<td class="Message">Tomcat started on port(s): 8080 (http) with context path &#39;/jeecg-boot&#39;</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">TomcatWebServer.java</td>
+<td class="LineOfCaller">220</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:56,794</td>
+<td class="Message">Documentation plugins bootstrapped</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">DocumentationPluginsBootstrapper.java</td>
+<td class="LineOfCaller">93</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:56,797</td>
+<td class="Message">Found 1 custom documentation plugin(s)</td>
+<td class="MethodOfCaller">bootstrapDocumentationPlugins</td>
+<td class="FileOfCaller">AbstractDocumentationPluginsBootstrapper.java</td>
+<td class="LineOfCaller">79</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:56,953</td>
+<td class="Message">Scanning for api listing references</td>
+<td class="MethodOfCaller">scan</td>
+<td class="FileOfCaller">ApiListingReferenceScanner.java</td>
+<td class="LineOfCaller">44</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,197</td>
+<td class="Message">Generating unique operation named: addUsingPOST_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,201</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,203</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,205</td>
+<td class="Message">Generating unique operation named: editUsingPUT_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,207</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,229</td>
+<td class="Message">Generating unique operation named: addUsingPOST_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,233</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,236</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,239</td>
+<td class="Message">Generating unique operation named: editUsingPUT_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,242</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,249</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_1</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,256</td>
+<td class="Message">Generating unique operation named: addUsingPOST_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,258</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,259</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,261</td>
+<td class="Message">Generating unique operation named: editUsingPUT_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,263</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,269</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_2</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,281</td>
+<td class="Message">Generating unique operation named: addUsingPOST_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,284</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,287</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,289</td>
+<td class="Message">Generating unique operation named: editUsingPUT_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,291</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,296</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_3</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,310</td>
+<td class="Message">Generating unique operation named: addUsingPOST_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,313</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,316</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,319</td>
+<td class="Message">Generating unique operation named: editUsingPUT_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,322</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,329</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_4</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,347</td>
+<td class="Message">Generating unique operation named: queryPageListUsingGET_5</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,349</td>
+<td class="Message">Generating unique operation named: deleteUsingDELETE_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,358</td>
+<td class="Message">Generating unique operation named: addUsingPOST_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,360</td>
+<td class="Message">Generating unique operation named: deleteBatchUsingDELETE_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,363</td>
+<td class="Message">Generating unique operation named: editUsingPUT_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,368</td>
+<td class="Message">Generating unique operation named: queryByIdUsingGET_6</td>
+<td class="MethodOfCaller">startingWith</td>
+<td class="FileOfCaller">CachingOperationNameGenerator.java</td>
+<td class="LineOfCaller">41</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:57,801</td>
+<td class="Message">Starting Quartz Scheduler now</td>
+<td class="MethodOfCaller">startScheduler</td>
+<td class="FileOfCaller">SchedulerFactoryBean.java</td>
+<td class="LineOfCaller">727</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:58,110</td>
+<td class="Message">ClusterManager: detected 1 failed or restarted instances.</td>
+<td class="MethodOfCaller">logWarnIfNonZero</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3644</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:58,110</td>
+<td class="Message">ClusterManager: Scanning for instance &quot;bogon1624586066814&quot;&#39;s failed in-progress jobs.</td>
+<td class="MethodOfCaller">clusterRecover</td>
+<td class="FileOfCaller">JobStoreSupport.java</td>
+<td class="LineOfCaller">3503</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:58,116</td>
+<td class="Message">Scheduler MyScheduler_$_bogon1624593532809 started.</td>
+<td class="MethodOfCaller">start</td>
+<td class="FileOfCaller">QuartzScheduler.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:58,141</td>
+<td class="Message">Started JeecgSystemApplication in 19.841 seconds (JVM running for 20.508)</td>
+<td class="MethodOfCaller">logStarted</td>
+<td class="FileOfCaller">StartupInfoLogger.java</td>
+<td class="LineOfCaller">61</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 11:58:58,149</td>
+<td class="Message">
+----------------------------------------------------------
+	Application Jeecg-Boot is running! Access URLs:
+	Local: 		http://localhost:8080/jeecg-boot/
+	External: 	http://172.16.5.240:8080/jeecg-boot/
+	Swagger文档: 	http://172.16.5.240:8080/jeecg-boot/doc.html
+----------------------------------------------------------</td>
+<td class="MethodOfCaller">main</td>
+<td class="FileOfCaller">JeecgSystemApplication.java</td>
+<td class="LineOfCaller">38</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:27:14,631</td>
+<td class="Message">Initializing Spring DispatcherServlet &#39;dispatcherServlet&#39;</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">173</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:27:14,639</td>
+<td class="Message">Initializing Servlet &#39;dispatcherServlet&#39;</td>
+<td class="MethodOfCaller">initServletBean</td>
+<td class="FileOfCaller">FrameworkServlet.java</td>
+<td class="LineOfCaller">525</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:27:14,768</td>
+<td class="Message">Completed initialization in 129 ms</td>
+<td class="MethodOfCaller">initServletBean</td>
+<td class="FileOfCaller">FrameworkServlet.java</td>
+<td class="LineOfCaller">547</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:27:15,719</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:27:16,768</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:31:59,568</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:31:59,665</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:54:15,934</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:54:16,652</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:54:17,959</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:55:04,268</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:55:07,762</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:55:07,804</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:55:39,588</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:55:40,314</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:56:47,264</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:56:49,759</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:56:54,006</td>
+<td class="Message">【websocket消息】有新的连接，总数为:2</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:56:54,500</td>
+<td class="Message">【websocket消息】连接断开，总数为:1</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:56:54,502</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:56:57,525</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:57:15,148</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:57:17,693</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:57:21,133</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:57:21,181</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:57:25,531</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 13:57:26,129</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:22,961</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:22,964</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:24,303</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:24,310</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:33,123</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:34,100</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:36,137</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:36,138</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:36,760</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:02:38,127</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:10:37,164</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:10:37,238</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:10:43,888</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 14:10:44,505</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:19:37,642</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2021-06-25 15:19:39,801</td>
+<td class="Message">Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">175</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.filters.JwtFilter.executeLogin(JwtFilter.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.filters.JwtFilter.isAccessAllowed(JwtFilter.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.filters.JwtFilter.preHandle(JwtFilter.java:95)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:748)
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:19:39,872</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:19:42,060</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:19:42,733</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:23:24,313</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:23:26,924</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:23:30,649</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:23:30,754</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:23:34,538</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:23:35,136</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:47,634</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:47,634</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:49,164</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:49,164</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:52,711</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:53,471</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:54,287</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:56,001</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:28:56,001</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:30:20,284</td>
+<td class="Message">======获取全部菜单数据=====耗时:16毫秒</td>
+<td class="MethodOfCaller">list</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">73</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:30:26,241</td>
+<td class="Message">======获取全部菜单数据=====耗时:5毫秒</td>
+<td class="MethodOfCaller">list</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">73</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:40,635</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:40,640</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:41,336</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:43,191</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:44,105</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:46,784</td>
+<td class="Message">======获取全部菜单数据=====耗时:5毫秒</td>
+<td class="MethodOfCaller">list</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">73</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:48,588</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:50,734</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 15:31:50,838</td>
+<td class="Message">======获取全部菜单数据=====耗时:4毫秒</td>
+<td class="MethodOfCaller">list</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">73</td>
+</tr>
+
+<tr class="error odd">
+<td class="Level">ERROR</td>
+<td class="Date">2021-06-25 16:44:02,481</td>
+<td class="Message">Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause</td>
+<td class="MethodOfCaller">log</td>
+<td class="FileOfCaller">DirectJDKLog.java</td>
+<td class="LineOfCaller">175</td>
+</tr>
+<tr><td class="Exception" colspan="6">org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:127)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:99)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.filters.JwtFilter.executeLogin(JwtFilter.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.filters.JwtFilter.isAccessAllowed(JwtFilter.java:43)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:223)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:198)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.jeecg.config.shiro.filters.JwtFilter.preHandle(JwtFilter.java:95)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+<br />&nbsp;&nbsp;&nbsp;&nbsp;at java.lang.Thread.run(Thread.java:748)
+</td></tr>
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 16:44:04,379</td>
+<td class="Message"> 用户名:  管理员,退出成功！ </td>
+<td class="MethodOfCaller">logout</td>
+<td class="FileOfCaller">LoginController.java</td>
+<td class="LineOfCaller">144</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 16:44:04,408</td>
+<td class="Message">【websocket消息】连接断开，总数为:0</td>
+<td class="MethodOfCaller">onClose</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">67</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 16:44:07,142</td>
+<td class="Message">redis remove key:sys:cache:user::admin</td>
+<td class="MethodOfCaller">remove</td>
+<td class="FileOfCaller">JeecgRedisCacheWriter.java</td>
+<td class="LineOfCaller">104</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 16:44:07,681</td>
+<td class="Message">【websocket消息】有新的连接，总数为:1</td>
+<td class="MethodOfCaller">onOpen</td>
+<td class="FileOfCaller">WebSocket.java</td>
+<td class="LineOfCaller">57</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 16:44:07,795</td>
+<td class="Message">======获取全部菜单数据=====耗时:5毫秒</td>
+<td class="MethodOfCaller">list</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">73</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 16:44:50,360</td>
+<td class="Message">======获取全部菜单数据=====耗时:5毫秒</td>
+<td class="MethodOfCaller">list</td>
+<td class="FileOfCaller">SysPermissionController.java</td>
+<td class="LineOfCaller">73</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:47,451</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:47,455</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:49,894</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:49,894</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:50,925</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:50,925</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:52,063</td>
+<td class="Message">排序规则&gt;&gt;列:null,排序方式:null</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:52,064</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>
+
+<tr class="info even">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:54,181</td>
+<td class="Message">--查询规则--&gt;copy_type = 0</td>
+<td class="MethodOfCaller">addEasyQuery</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">497</td>
+</tr>
+
+<tr class="info odd">
+<td class="Level">INFO</td>
+<td class="Date">2021-06-25 17:39:54,181</td>
+<td class="Message">排序规则&gt;&gt;列:createTime,排序方式:desc</td>
+<td class="MethodOfCaller">doMultiFieldsOrder</td>
+<td class="FileOfCaller">QueryGenerator.java</td>
+<td class="LineOfCaller">224</td>
+</tr>

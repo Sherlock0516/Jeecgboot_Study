@@ -9,7 +9,7 @@
           </a>
         </div>
         <div class="desc">
-          UNIS Selling Assistance
+          UNIS Selling Assistance System
         </div>
       </div>
 
