@@ -1,0 +1,424 @@
+2021-06-28 09:18:23.254 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
+	at org.jeecg.config.shiro.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:127)
+	at org.jeecg.config.shiro.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:99)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.config.shiro.filters.JwtFilter.executeLogin(JwtFilter.java:65)
+	at org.jeecg.config.shiro.filters.JwtFilter.isAccessAllowed(JwtFilter.java:43)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:223)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:198)
+	at org.jeecg.config.shiro.filters.JwtFilter.preHandle(JwtFilter.java:95)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-28 09:18:24.912 [http-nio-8080-exec-8] INFO  o.jeecg.modules.system.controller.LoginController:144 -  用户名:  管理员,退出成功！ 
+2021-06-28 09:18:25.193 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 09:18:29.985 [http-nio-8080-exec-5] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:104 - redis remove key:sys:cache:user::admin
+2021-06-28 09:18:30.735 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 09:19:08.183 [http-nio-8080-exec-4] INFO  o.jeecg.modules.system.controller.LoginController:144 -  用户名:  管理员,退出成功！ 
+2021-06-28 09:19:08.270 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 09:19:13.202 [http-nio-8080-exec-2] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:104 - redis remove key:sys:cache:user::admin
+2021-06-28 09:19:13.848 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 09:25:03.058 [http-nio-8080-exec-8] INFO  o.jeecg.modules.system.controller.LoginController:144 -  用户名:  管理员,退出成功！ 
+2021-06-28 09:25:03.140 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 09:25:07.974 [http-nio-8080-exec-5] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:104 - redis remove key:sys:cache:user::admin
+2021-06-28 09:25:08.674 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 09:55:53.594 [http-nio-8080-exec-1] INFO  o.jeecg.modules.system.controller.LoginController:144 -  用户名:  管理员,退出成功！ 
+2021-06-28 09:55:53.698 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 09:55:57.779 [http-nio-8080-exec-8] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:104 - redis remove key:sys:cache:user::admin
+2021-06-28 09:55:58.396 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:06:40.615 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:1000 - query auth sql is = 
+2021-06-28 10:06:40.616 [http-nio-8080-exec-6] INFO  org.jeecg.modules.online.cgreport.service.a.c:160 - 报表查询sql=>
+select * from (select * from sys_user) jeecg_rp_temp  where 1=1 
+2021-06-28 10:06:40.856 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:1000 - query auth sql is = 
+2021-06-28 10:06:40.857 [http-nio-8080-exec-3] INFO  org.jeecg.modules.online.cgreport.service.a.c:160 - 报表查询sql=>
+select * from (select * from sys_user) jeecg_rp_temp  where 1=1 
+2021-06-28 10:06:45.574 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:1000 - query auth sql is = 
+2021-06-28 10:06:45.576 [http-nio-8080-exec-3] INFO  org.jeecg.modules.online.cgreport.service.a.c:160 - 报表查询sql=>
+select * from (select * from sys_user) jeecg_rp_temp  where 1=1 
+2021-06-28 10:06:45.684 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:1000 - query auth sql is = 
+2021-06-28 10:06:45.686 [http-nio-8080-exec-8] INFO  org.jeecg.modules.online.cgreport.service.a.c:160 - 报表查询sql=>
+select * from (select * from sys_user) jeecg_rp_temp  where 1=1 
+2021-06-28 10:11:31.624 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 10:11:31.676 [http-nio-8080-exec-10] INFO  o.j.modules.system.controller.SysUserController:128 - com.baomidou.mybatisplus.extension.plugins.pagination.Page@71525379
+2021-06-28 10:11:31.702 [http-nio-8080-exec-10] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_position ,dicText= name ,dicCode=code
+2021-06-28 10:11:31.741 [http-nio-8080-exec-10] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_position ,dicText= name ,dicCode=code
+2021-06-28 10:11:31.742 [http-nio-8080-exec-10] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_depart ,dicText= depart_name ,dicCode=id
+2021-06-28 10:11:31.762 [http-nio-8080-exec-10] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_position ,dicText= name ,dicCode=code
+2021-06-28 10:11:32.889 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 10:11:35.161 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 10:11:35.168 [http-nio-8080-exec-9] INFO  o.j.modules.system.controller.SysUserController:128 - com.baomidou.mybatisplus.extension.plugins.pagination.Page@7110b32d
+2021-06-28 10:11:35.175 [http-nio-8080-exec-9] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_position ,dicText= name ,dicCode=code
+2021-06-28 10:11:35.181 [http-nio-8080-exec-9] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_position ,dicText= name ,dicCode=code
+2021-06-28 10:11:35.183 [http-nio-8080-exec-9] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_depart ,dicText= depart_name ,dicCode=id
+2021-06-28 10:11:35.189 [http-nio-8080-exec-9] INFO  org.jeecg.common.aspect.DictAspect:152 - --DictAspect------dicTable=sys_position ,dicText= name ,dicCode=code
+2021-06-28 10:18:04.336 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 10:19:07.561 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:19:09.689 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:19:21.267 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:19:23.621 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:19:30.828 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:19:32.160 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:19:40.227 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:19:41.392 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:20:01.647 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:20:03.711 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:20:09.186 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:20:10.365 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:20:15.408 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:20:16.593 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:20:24.309 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:20:25.464 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:20:35.027 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:20:36.180 [http-nio-8080-exec-3] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:22:04.123 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:22:06.020 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 10:40:52.630 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 10:40:55.387 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:07:43.657 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
+	at org.jeecg.config.shiro.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:127)
+	at org.jeecg.config.shiro.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:99)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.config.shiro.filters.JwtFilter.executeLogin(JwtFilter.java:65)
+	at org.jeecg.config.shiro.filters.JwtFilter.isAccessAllowed(JwtFilter.java:43)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:223)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:198)
+	at org.jeecg.config.shiro.filters.JwtFilter.preHandle(JwtFilter.java:95)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-28 15:07:43.657 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
+	at org.jeecg.config.shiro.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:127)
+	at org.jeecg.config.shiro.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:99)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.config.shiro.filters.JwtFilter.executeLogin(JwtFilter.java:65)
+	at org.jeecg.config.shiro.filters.JwtFilter.isAccessAllowed(JwtFilter.java:43)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:223)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:198)
+	at org.jeecg.config.shiro.filters.JwtFilter.preHandle(JwtFilter.java:95)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-28 15:07:45.002 [http-nio-8080-exec-6] INFO  o.jeecg.modules.system.controller.LoginController:144 -  用户名:  管理员,退出成功！ 
+2021-06-28 15:07:45.042 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:07:47.943 [http-nio-8080-exec-4] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:104 - redis remove key:sys:cache:user::admin
+2021-06-28 15:07:48.534 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:32:45.544 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:32:48.470 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:32:54.127 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:32:55.788 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:33:46.227 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 15:33:46.228 [http-nio-8080-exec-6] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 15:34:01.835 [http-nio-8080-exec-4] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:34:04.000 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:34:04.124 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 15:34:04.131 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 15:34:21.472 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:34:24.416 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:34:24.530 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 15:34:24.536 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 15:35:44.874 [http-nio-8080-exec-5] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:35:47.924 [http-nio-8080-exec-8] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:35:48.035 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 15:35:48.036 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 15:36:02.616 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:36:05.435 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 15:36:05.546 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 15:36:05.546 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 15:38:00.700 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 15:38:03.673 [http-nio-8080-exec-7] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 17:44:12.458 [http-nio-8080-exec-3] ERROR o.a.c.c.C.[.[.[/jeecg-boot].[dispatcherServlet]:175 - Servlet.service() for servlet [dispatcherServlet] in context with path [/jeecg-boot] threw exception [org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录] with root cause
+org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
+	at org.jeecg.config.shiro.ShiroRealm.checkUserTokenIsEffect(ShiroRealm.java:127)
+	at org.jeecg.config.shiro.ShiroRealm.doGetAuthenticationInfo(ShiroRealm.java:99)
+	at org.apache.shiro.realm.AuthenticatingRealm.getAuthenticationInfo(AuthenticatingRealm.java:571)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doSingleRealmAuthentication(ModularRealmAuthenticator.java:180)
+	at org.apache.shiro.authc.pam.ModularRealmAuthenticator.doAuthenticate(ModularRealmAuthenticator.java:273)
+	at org.apache.shiro.authc.AbstractAuthenticator.authenticate(AbstractAuthenticator.java:198)
+	at org.apache.shiro.mgt.AuthenticatingSecurityManager.authenticate(AuthenticatingSecurityManager.java:106)
+	at org.apache.shiro.mgt.DefaultSecurityManager.login(DefaultSecurityManager.java:275)
+	at org.apache.shiro.subject.support.DelegatingSubject.login(DelegatingSubject.java:260)
+	at org.jeecg.config.shiro.filters.JwtFilter.executeLogin(JwtFilter.java:65)
+	at org.jeecg.config.shiro.filters.JwtFilter.isAccessAllowed(JwtFilter.java:43)
+	at org.apache.shiro.web.filter.AccessControlFilter.onPreHandle(AccessControlFilter.java:162)
+	at org.apache.shiro.web.filter.PathMatchingFilter.isFilterChainContinued(PathMatchingFilter.java:223)
+	at org.apache.shiro.web.filter.PathMatchingFilter.preHandle(PathMatchingFilter.java:198)
+	at org.jeecg.config.shiro.filters.JwtFilter.preHandle(JwtFilter.java:95)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:131)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108)
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:450)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365)
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90)
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83)
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387)
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362)
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-28 17:44:13.958 [http-nio-8080-exec-9] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 17:44:16.754 [http-nio-8080-exec-7] INFO  o.j.c.modules.redis.writer.JeecgRedisCacheWriter:104 - redis remove key:sys:cache:user::admin
+2021-06-28 17:44:17.324 [http-nio-8080-exec-2] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
+2021-06-28 17:44:17.440 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 17:44:17.441 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 17:44:23.733 [http-nio-8080-exec-7] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 17:44:23.736 [http-nio-8080-exec-8] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:null,排序方式:null
+2021-06-28 17:44:24.812 [http-nio-8080-exec-2] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
+2021-06-28 17:44:24.813 [http-nio-8080-exec-2] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-28 17:59:35.278 [http-nio-8080-exec-6] ERROR org.apache.tomcat.websocket.pojo.PojoEndpointBase:175 - No error handling configured for [org.jeecg.modules.message.websocket.WebSocket] and the following error occurred
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1231)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1141)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:72)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-28 17:59:35.282 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-28 17:59:41.583 [http-nio-8080-exec-10] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1

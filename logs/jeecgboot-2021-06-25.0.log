@@ -783,3 +783,26 @@ org.apache.shiro.authc.AuthenticationException: Token失效，请重新登录!
 2021-06-25 17:39:52.064 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
 2021-06-25 17:39:54.181 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:497 - --查询规则-->copy_type = 0
 2021-06-25 17:39:54.181 [http-nio-8080-exec-3] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-25 17:42:16.218 [http-nio-8080-exec-2] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-25 17:42:16.218 [http-nio-8080-exec-10] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:null,排序方式:null
+2021-06-25 17:42:16.221 [http-nio-8080-exec-1] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:null,排序方式:null
+2021-06-25 17:43:05.730 [http-nio-8080-exec-9] INFO  org.jeecg.common.system.query.QueryGenerator:224 - 排序规则>>列:createTime,排序方式:desc
+2021-06-25 18:02:03.692 [http-nio-8080-exec-1] ERROR org.apache.tomcat.websocket.pojo.PojoEndpointBase:175 - No error handling configured for [org.jeecg.modules.message.websocket.WebSocket] and the following error occurred
+java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1231)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1141)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:72)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:171)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:151)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:148)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:54)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:59)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-06-25 18:02:03.709 [http-nio-8080-exec-1] INFO  org.jeecg.modules.message.websocket.WebSocket:67 - 【websocket消息】连接断开，总数为:0
+2021-06-25 18:02:09.649 [http-nio-8080-exec-6] INFO  org.jeecg.modules.message.websocket.WebSocket:57 - 【websocket消息】有新的连接，总数为:1
